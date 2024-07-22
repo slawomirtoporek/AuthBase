@@ -1,8 +1,9 @@
 <section class="index-page">
-  <p class="success">
-    You have been successfully logged in!
-  </p>
+  <div class="img">
+    <img class="avatar" src="{{avatar}}" alt="">
+  </div>
+  <h2>Hello {{name}}!</h2>
   <form action="/auth/logout" method="post">
-    <button type="submit" class="error">Logout</button>
+    <button type="submit" class="btn-logout">Log out</button>
   </form>
 </section>

@@ -4,7 +4,7 @@ const router = express.Router();
 router.get('/logged', (req, res) => {
   const loggedUser = req.user;
   if (loggedUser){
-    res.render('logged');
+    res.render('logged', {name: req.user.displayName, avatar: req.user.photos[0].value});
   } else {
     res.render('noPermission');
   }
